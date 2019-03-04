@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/bg_green_end"
+    android:weightSum="5"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/img_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_img1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:onClick="img1_click"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/img_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_img2"
+        android:onClick="img2_click"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/img_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_img3"
+            android:onClick="img3_click"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_img4"
+            android:onClick="img4_click"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:background="@drawable/game_btn_shape"
+            android:onClick="click"
+
+            android:text="start" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:textColor="#cd0000"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:layout_marginTop="20dp"
+    android:text="Your score"
+    />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#cd0000"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:background="@drawable/game_btn_shape"
+            android:onClick="refresh"
+
+
+            android:text="refresh" />
+    </LinearLayout>
+
+</LinearLayout>
+
